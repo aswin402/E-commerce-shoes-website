@@ -11,7 +11,7 @@ app.get("/", (c) => {
   return c.json({ message: "Shoes API with MongoDB 🚀" });
 });
 
-app.route("/api/shoes", productRouter);
+app.route("/api/products", productRouter);
 
 export default {
   port: config.port,
