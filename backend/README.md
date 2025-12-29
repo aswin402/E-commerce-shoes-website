@@ -120,3 +120,22 @@ MongoDB
 
 
 in browser if u go to http://localhost:3000/api/productss you can see all the shoes available in our store
+
+## use cors middleware to allow requests from any origin
+
+
+ ```
+ import { cors } from "hono/cors";
+
+
+ app.use(
+  "/api/*",
+  cors({
+    origin: "http://localhost:3000",
+    allowMethods: ["GET", "POST", "PUT", "DELETE"],
+    allowHeaders: ["Content-Type"],
+  })
+);
+ ```
+
+ on server.ts file
