@@ -53,7 +53,7 @@ PORT=4000
 MONGO_URI=your_mongodb_connection_string
 
 ### Frontend
-NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000
 
 ## ▶️ Running the Project
 ### Backend
@@ -68,7 +68,7 @@ bun run dev
 
 ## 🌐 URLs
 
-Backend: http://localhost:4000
+Backend: http://localhost:5000
 
 Frontend: http://localhost:3000
 
